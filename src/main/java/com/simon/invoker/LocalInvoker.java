@@ -1,4 +1,4 @@
-package com.simon.util;
+package com.simon.invoker;
 
 import java.lang.reflect.Method;
 
@@ -6,9 +6,9 @@ import java.lang.reflect.Method;
  * @data: 2020/7/31 17:51
  * @author: limeng17
  * @version:
- * @description:
+ * @description: 本地方法调用
  */
-public class LocalInvoker {
+public class LocalInvoker implements Invoker{
 
     private Object instance;
     private String method;
@@ -23,6 +23,7 @@ public class LocalInvoker {
         this.setValue(value);
     }
 
+    @Override
     public Object invoke() throws Exception {
         if (this.instance == null || this.method == null) {
             return null;

@@ -2,7 +2,7 @@ package com.simon.entity;
 
 import cn.hutool.core.util.ObjectUtil;
 import com.simon.util.ApplicationContextUtil;
-import com.simon.util.LocalInvoker;
+import com.simon.invoker.LocalInvoker;
 
 import java.io.Serializable;
 
